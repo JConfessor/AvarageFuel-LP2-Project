@@ -12,7 +12,7 @@ public class App {
         int lincount;
         lincount = reader.readXLSX();
 
-        System.out.println();
+        System.out.println(" ");
         System.out.println("ROW AMOUNT IN SHEET: \n" + lincount);
     }
 }
