@@ -10,6 +10,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class XLSX {
@@ -34,43 +36,65 @@ public class XLSX {
         this.evaluator = WB.getCreationHelper().createFormulaEvaluator();
     }
 
-    public int readXLSX() throws IOException {
-        int lincount = 0;
+//    public int readXLSX() throws IOException {
+//        int lincount = 0;
+//        int cont = 0;
+//
+//        for(Row r: SH){
+//            lincount += 1;
+//            for(Cell cell : r){
+//                if(cont == 0){
+//                    cont += 1;
+//                }
+//                switch(evaluator.evaluateInCell(cell).getCellType()){
+//                    case NUMERIC:
+//                        System.out.print(cell.getNumericCellValue() + "\t\t");
+//                        break;
+//
+//                    case STRING:
+//                        System.out.print(cell.getStringCellValue() + "\t\t");
+//                        break;
+//
+//                    case BOOLEAN:
+//                        System.out.print(cell.getBooleanCellValue() + "\t\t");
+//                        break;
+//
+//                    case BLANK:
+//                        System.out.print("- \t\t");
+//                        break;
+//
+//                    case ERROR:
+//                    case FORMULA:
+//                    case _NONE:
+//                        break;
+//
+//                }
+//            }
+//            System.out.println();
+//        }
+//
+//        WB.close();
+//        return lincount;
+//
+//    }
 
-        for(Row r: SH){
-            lincount += 1;
-            for(Cell cell : r){
-                switch(evaluator.evaluateInCell(cell).getCellType()){
-                    case NUMERIC:
-                        System.out.print(cell.getNumericCellValue() + "\t\t");
-                        break;
+    public int readXLSX(){
 
-                    case STRING:
-                        System.out.print(cell.getStringCellValue() + "\t\t");
-                        break;
+        List<String> nomesJaPassados = new ArrayList<String>();
 
-                    case BOOLEAN:
-                        System.out.print(cell.getBooleanCellValue() + "\t\t");
-                        break;
+        for(Row linha: SH){
+            if(linha.getRowNum() > 1){
+                // Nome da empresa
+//            System.out.print(linha.getCell(2).toString() + "\t\t");
 
-                    case BLANK:
-                        System.out.print("- \t\t");
-                        break;
-
-                    case ERROR:
-                        break;
-                    case FORMULA:
-                        break;
-                    case _NONE:
-                        break;
-
+                String nomeCondutor = linha.getCell(10).toString();
+                if (!nomesJaPassados.contains(nomeCondutor)) {
+                    nomesJaPassados.add(nomeCondutor);
+                    System.out.println(nomeCondutor);
                 }
             }
-            System.out.println();
+//
         }
-
-        WB.close();
-        return lincount;
-
+        return 0;
     }
 }

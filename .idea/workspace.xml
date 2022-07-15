@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7f049c2-6bac-45b2-b05a-828cd5c1543d" name="Changes" comment="feat: Code hierarchy done">
-      <change afterPath="$PROJECT_DIR$/src/Resource/Test1.xlsx" afterDir="false" />
+    <list default="true" id="f7f049c2-6bac-45b2-b05a-828cd5c1543d" name="Changes" comment="feat: Test commit 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/imd/file/XLSX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/imd/file/XLSX.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +51,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.br.ufrn.imd.App">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.ufrn.imd.App" />
       <module name="untitled4" />
@@ -68,7 +68,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.br.ufrn.imd.App" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.Teste" />
       </list>
     </recent_temporary>
@@ -98,7 +98,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657820929247</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: Test commit">
+      <created>1657821393915</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657821393915</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: Test commit 2">
+      <created>1657821553008</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657821553008</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +145,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Init Project" />
     <MESSAGE value="feat: Code hierarchy done" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Code hierarchy done" />
+    <MESSAGE value="feat: Test commit" />
+    <MESSAGE value="feat: Test commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Test commit 2" />
   </component>
 </project>
